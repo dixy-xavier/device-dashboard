@@ -1,0 +1,6 @@
+.mainWrapper {
+  padding: 10px 50px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}

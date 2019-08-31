@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import styles from './styles.css';
 
-import App from './App';
+import App from './components/App/App';
 
 function render(Component) {
     ReactDOM.render(
@@ -17,8 +17,8 @@ function render(Component) {
 render(App);
 
 if (module.hot) {
-    module.hot.accept('./App', () => {
-        const NextApp = require('./App').default;
+    module.hot.accept(App, () => {
+        const NextApp = App;
         render(NextApp);
     });
 }
