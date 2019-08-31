@@ -22,3 +22,32 @@
 .cell:first-child {
   padding-left: 10px;
 }
+
+.status {
+  display: flex;
+  height: 20px;
+  width: 50px;
+  background-color: rgb(243, 245, 248);
+  cursor: pointer;
+}
+
+.statusOff {
+  flex-grow: 1;
+  background-color: white;
+  border: 1px solid green;
+}
+
+.inactiveButton {
+  flex-grow: 2;
+}
+
+.statusOn {
+  flex-grow: 2;
+  background-color: green;
+}
+
+.activeButton {
+  flex-grow: 1;
+  background-color: white;
+  border: 1px solid green;
+}
