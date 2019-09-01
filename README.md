@@ -2,6 +2,11 @@
 
 # Relayr Frontend Challenge
 
+## Steps to run application
+```npm i```
+
+```npm start```
+
 ## Our Expectations
 
 
