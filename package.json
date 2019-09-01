@@ -25,7 +25,7 @@
 		"extract-text-webpack-plugin": "^3.0.2",
 		"html-webpack-plugin": "^3.2.0",
 		"mini-css-extract-plugin": "^0.5.0",
-		"open": "0.0.5",
+		"open": "^6.4.0",
 		"path": "^0.12.7",
 		"react-hot-loader": "^4.8.2",
 		"restify": "^8.4.0",
