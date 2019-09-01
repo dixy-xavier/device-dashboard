@@ -1,19 +1,24 @@
 import React from 'react';
 import './Search.css';
 
+const Count = ({ type, count }) => (
+  <div className='readingWrapper'>
+    <span className={type}>{count}</span>
+    <span className='label'>{`${type} readings`}</span>
+  </div>
+);
+
+const Counts = ({ activeCount, inactiveCount }) => (
+  <div className='readings'>
+    <Count count={activeCount} type="active" />
+    <Count count={inactiveCount} type="inactive" />
+  </div>
+);
+
 const Search = ({ onSearch, activeCount, inactiveCount }) => (
   <div className='searchWrapper'>
-    <input className='search' onChange={event => onSearch(event.target.value)} />
-    <div className='readings'>
-      <div className='readingWrapper'>
-        <span className='active'>{activeCount}</span>
-        <span className='label'>active readings</span>
-      </div>
-      <div className='readingWrapper'>
-        <span className='inactive'>{inactiveCount}</span>
-        <span className='label'>inactive readings</span>
-      </div>
-    </div>
+    <input className='search' placeholder="Search..." onChange={event => onSearch(event.target.value)} />
+    <Counts activeCount={activeCount} inactiveCount={inactiveCount} />
   </div>
 );
 

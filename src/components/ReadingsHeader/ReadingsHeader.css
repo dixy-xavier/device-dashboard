@@ -3,6 +3,7 @@
   background-color: rgb(243, 245, 248);
   height: 50px;
   align-items: center;
+  flex: 0 0 auto;
 }
 
 .headerCell {

@@ -62,8 +62,12 @@ class Main extends Component {
           activeCount={activeCount}
           inactiveCount={filteredReadings.length - activeCount}
         />
-        <ReadingsHeader columns={getColumnHeaders(readings)} />
-        <Readings readings={filteredReadings} searchText={searchText} onStatusClick={this.onStatusClick} />
+        {filteredReadings.length ? (
+          <>
+            <ReadingsHeader columns={getColumnHeaders(readings)} />
+            <Readings readings={filteredReadings} searchText={searchText} onStatusClick={this.onStatusClick} />
+          </>
+        ) : <h2 className='noData'>No data found</h2>}
       </div>
     );
   }
