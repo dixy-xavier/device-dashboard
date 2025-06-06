@@ -32,6 +32,6 @@
 		"restify-cors-middleware": "^1.1.1",
 		"webpack": "^4.19.1",
 		"webpack-cli": "^3.2.3",
-		"webpack-dev-server": "3.8.0"
+		"webpack-dev-server": "5.2.1"
 	}
 }
